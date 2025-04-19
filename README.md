@@ -92,3 +92,6 @@ This project is an **HR Management System (HRMS) Dashboard** designed to streaml
 
 #Leaves Page
 ![image](https://github.com/user-attachments/assets/227a7957-cc60-46a0-a39f-d821bfcffc3d)
+
+
+
