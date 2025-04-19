@@ -1,0 +1,144 @@
+/* Global animation for page fade-in effect */
+.employees-page {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Styling for the employee avatar */
+.employee-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 0.875rem;
+    background-color: #ccc;
+    /* Default background color for avatars */
+    transition: background-color 0.3s ease;
+}
+
+.employee-avatar:hover {
+    background-color: #4f46e5;
+    /* Hover effect on avatar */
+}
+
+/* Form styling */
+.employee-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.employee-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.employee-form input,
+.employee-form select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.employee-form input[type="date"] {
+    cursor: pointer;
+}
+
+/* Focus effect for form inputs */
+.employee-form input:focus,
+.employee-form select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 4px rgba(79, 70, 229, 0.6);
+}
+
+/* Styling for form buttons */
+.employee-form .form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.employee-form .form-actions button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+
+    /* Adjusting layout for smaller screens */
+    .employee-form .form-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Stack form fields */
+    }
+
+    .employee-avatar {
+        width: 50px;
+        /* Slightly larger avatars on mobile */
+        height: 50px;
+        font-size: 1rem;
+        /* Increase font size for mobile */
+    }
+}
+
+/* Custom grid layout for the form rows */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Add some space around form elements */
+.employee-form .form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.employee-form input,
+.employee-form select {
+    border-radius: 4px;
+    padding: 8px;
+}
+
+/* Hover effect for form button */
+.employee-form button:hover {
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+}
+
+/* Additional custom styles for table actions */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Add margin between each row of the form */
+.employee-form .form-group+.form-group {
+    margin-top: 1rem;
+}
+
+/* Add spacing between the action buttons */
+.action-buttons button {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    border-radius: 4px;
+}
+
+/* Styling for table and its cells */
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+}

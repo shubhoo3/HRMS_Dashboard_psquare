@@ -1,0 +1,124 @@
+.sidebar {
+    width: 240px;
+    background-color: white;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    transition: width var(--transition-normal), transform var(--transition-normal);
+    z-index: 100;
+}
+
+.sidebar-header {
+    padding: var(--space-4);
+    border-bottom: 1px solid var(--border);
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: var(--space-3) 0;
+    overflow-y: auto;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: var(--space-1);
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: var(--space-3) var(--space-4);
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+.sidebar-nav a:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.sidebar-nav a.active {
+    background-color: var(--primary-light);
+    color: white;
+    border-right: 3px solid var(--primary);
+}
+
+.sidebar-nav a svg {
+    margin-right: var(--space-3);
+    font-size: 1.2rem;
+}
+
+.sidebar-footer {
+    padding: var(--space-3) var(--space-4);
+    border-top: 1px solid var(--border);
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--space-3);
+    background-color: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    border-radius: var(--radius-md);
+}
+
+.logout-button:hover {
+    background-color: var(--error);
+    color: white;
+}
+
+.logout-button svg {
+    margin-right: var(--space-3);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar-nav {
+        display: flex;
+        overflow-x: auto;
+        padding: var(--space-2) 0;
+    }
+
+    .sidebar-nav ul {
+        display: flex;
+    }
+
+    .sidebar-nav li {
+        margin-bottom: 0;
+        margin-right: var(--space-2);
+    }
+
+    .sidebar-nav a {
+        padding: var(--space-2);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sidebar-nav a svg {
+        margin-right: 0;
+        margin-bottom: var(--space-1);
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+}

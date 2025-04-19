@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-icon {
+    margin-right: var(--space-2);
+    display: flex;
+}
+
+.logo-text {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+}
+
+.logo-small .logo-text {
+    font-size: 1rem;
+}
+
+.logo-large .logo-text {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,199 @@
+.leaves-page {
+    animation: fadeIn 0.5s ease;
+}
+
+.leaves-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-4);
+}
+
+.leave-dates {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-range {
+    font-size: 0.875rem;
+}
+
+.leave-days {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-top: 2px;
+}
+
+.leave-status {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: var(--radius-full);
+    width: fit-content;
+}
+
+.status-approved {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.status-rejected {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.present-employees {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.present-employee {
+    display: flex;
+    align-items: center;
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+}
+
+.present-employee:hover {
+    background-color: var(--secondary);
+}
+
+.employee-info {
+    flex: 1;
+    margin-left: var(--space-3);
+}
+
+.employee-name {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.employee-dept {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-top: 2px;
+}
+
+.no-present-employees {
+    padding: var(--space-4);
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 0.875rem;
+}
+
+.leave-calendar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.calendar-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    transition: box-shadow var(--transition-fast);
+}
+
+.calendar-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-dates {
+    margin-bottom: var(--space-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.date-range-short {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.leave-days-small {
+    font-size: 0.75rem;
+    background-color: var(--secondary);
+    padding: 2px 6px;
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+}
+
+.calendar-employee {
+    display: flex;
+    align-items: center;
+    margin-top: var(--space-1);
+}
+
+.employee-avatar-small {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.employee-info-small {
+    margin-left: var(--space-2);
+}
+
+.employee-name-small {
+    font-size: 0.813rem;
+}
+
+.leave-type {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.no-leaves {
+    padding: var(--space-4);
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 0.875rem;
+}
+
+.leave-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.form-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    background-color: var(--secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.info-icon {
+    color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+    .leaves-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leave-actions {
+        flex-direction: row;
+    }
+}
